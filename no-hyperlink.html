@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página não vinculada - Skyfall</title>
+
+    <!-- Link - Favicon -->
+    <link
+      rel="shortcut icon"
+      href="img/Icons/SG-Original.png"
+      type="image/x-icon"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #1f2230, #2c2f40);
+        color: #faf9f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        padding: 50px 30px;
+        border-radius: 25px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+        max-width: 500px;
+        width: 90%;
+        animation: fadeIn 1s ease-in-out;
+        z-index: 1;
+      }
+
+      .logo {
+        width: 170px;
+        height: auto;
+        margin-bottom: 20px;
+        animation: floatLogo 3s ease-in-out infinite;
+      }
+
+      .container h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      .container p {
+        font-size: 1rem;
+        margin-bottom: 35px;
+        opacity: 0.9;
+      }
+
+      .btn-home {
+        display: inline-block;
+        padding: 14px 32px;
+        font-size: 1rem;
+        color: #faf9f6;
+        background: linear-gradient(135deg, #4b6cb7, #182848);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      .btn-home:hover {
+        background: linear-gradient(135deg, #182848, #4b6cb7);
+        transform: scale(1.07);
+        box-shadow: 0 0 15px rgba(75, 108, 183, 0.5);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes floatLogo {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      /* Overlay */
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(31, 34, 48, 0.95);
+        color: #faf9f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        z-index: 9999;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+      }
+
+      .overlay.active {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .spinner {
+        border: 6px solid rgba(255, 255, 255, 0.2);
+        border-top: 6px solid #faf9f6;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+        margin-top: 20px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="logo"
+        src="img/Logo/Logo-Skyfall-Group-GrayBlue.png"
+        alt="Sua Logo"
+      />
+      <h1>🔗 Pagina não vinculada 🔗</h1>
+      <p>
+        Que Pena, esse site ainda não foi vinculada da forma correta :(<br />Para
+        mais informações, acesse:<br /><strong
+          style="font-weight: bold; color: #00bfff; font-size: 15px"
+          >skyfall.com/project-cloud</strong
+        >
+      </p>
+      <button class="btn-home" onclick="voltarPaginaAnterior()">
+        Clique aqui para Retornar
+      </button>
+    </div>
+
+    <div class="overlay" id="overlay">
+      <div id="msgRedirect">Pegue uma carona nessa cauda de cometa...</div>
+      <div class="spinner"></div>
+    </div>
+
+    <script>
+      const mensagens = [
+        "Levando você para a Kame House...",
+        "Conectando você a corrida doce...",
+        "Redirecionando, só um instante...",
+        "Preparando a sua constelação no céu...",
+        "Te abdusindo para as nuvens...",
+        "Te levando para casa usando a nuvem do Goku...",
+      ];
+
+      function voltarPaginaAnterior() {
+        const overlay = document.getElementById("overlay");
+        const msg = document.getElementById("msgRedirect");
+        const randomMsg =
+          mensagens[Math.floor(Math.random() * mensagens.length)];
+        msg.textContent = randomMsg;
+
+        overlay.classList.add("active");
+
+        setTimeout(() => {
+          // Volta para a página anterior no histórico
+          if (document.referrer) {
+            window.history.back();
+          } else {
+            // fallback caso não haja página anterior
+            window.location.href = "../Site-Principal.html";
+          }
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>

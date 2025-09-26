@@ -1,0 +1,59 @@
+.principal {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 1000px;
+}
+
+.accordion {
+    background-color: var(--azure_acizentado);
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.accordion-header span {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.accordion-body {
+    color: var(--offwhite);
+    font-size: 14px;
+    /* Estado inicial: conteúdo oculto */
+    max-height: 0; 
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 0px; /* Altere para 0 padding inicial para transição suave */
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+/* Estado ativo: aplica a classe 'active' ao .accordion que estiver aberto */
+.accordion-body.active {
+    /* Valor grande para 'max-height' que acomoda o conteúdo sem cortá-lo */
+    max-height: 500px; 
+    opacity: 1;
+    padding: 5px 0px; /* Padding para o estado ativo */
+}
