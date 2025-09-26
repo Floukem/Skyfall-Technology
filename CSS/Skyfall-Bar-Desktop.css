@@ -1,0 +1,13 @@
+.sk-desktop a {
+  background-color: #1f2230;
+  align-items: right;
+  justify-content: right;
+  display: flex;
+  height: 40px;
+}
+
+.sk-desktop a img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 8px;
+}

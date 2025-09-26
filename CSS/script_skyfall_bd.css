@@ -1,0 +1,227 @@
+@import url("https://use.typekit.net/ouk7esy.css");
+
+/* -------------------- Variáveis de cor -------------------- */
+:root {
+    --offwhite: #f5f5f5;
+    --roxo_vibrante: #a879e6;
+}
+
+/* -------------------- Fontes -------------------- */
+@font-face {
+    font-family: "BD";
+    src: local("Avallon"), local("BD"),
+        url("font/Avallon.woff2") format("woff2"),
+        url("font/Avallon.woff") format("woff"),
+        url("font/Avallon.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "BD";
+    src: local("Avallon Bold"), local("BD Bold"),
+        url("font/Avallon-Bold.woff2") format("woff2"),
+        url("font/Avallon-Bold.woff") format("woff"),
+        url("font/Avallon.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* -------------------- Seção Acio -------------------- */
+section.acio {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.acio article {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 15px 0;
+}
+
+/* Box AC */
+.acio .box-ac {
+    background-color: #151515;
+    padding: 20px;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Ícones e layout interno */
+.acio .ico,
+.acio .ico2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Box de informações (h2 e .sub empilhados) */
+.acio .ico .info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.acio .ico .info img {
+    max-width: 80px;
+    border-radius: 20px;
+}
+
+.acio .ico2 img {
+    max-width: 120px;
+    border-radius: 20px;
+}
+
+/* Tipografia dentro da box */
+.acio h2 {
+    font-family: "muli", sans-serif;
+    color: var(--offwhite);
+    margin: 0;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.acio p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    color: var(--offwhite);
+    margin: 0;
+}
+
+.acio span {
+    color: var(--roxo_vibrante);
+}
+
+/* Corrigido: Estilos para o parágrafo da classe `sub` */
+.acio .sub {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    color: black; /* Cor do parágrafo mudada para preto */
+    margin: 0;
+    margin-bottom: -70px;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.acio .sub span {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    color: rgb(0, 157, 255); /* Cor do parágrafo mudada para preto */
+    margin: 0;
+    margin-bottom: -70px;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Botões */
+.acio button {
+    background-color: transparent;
+    border: 2px solid var(--offwhite);
+    border-radius: 5px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: 180px;
+    height: 45px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--offwhite);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.acio button a {
+    text-decoration: none;
+    color: var(--offwhite);
+}
+
+.acio button:hover {
+    background-color: var(--roxo_vibrante);
+    box-shadow: 0 0 40px 6px var(--roxo_vibrante);
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+/* Título principal da seção */
+.acio h1 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 45px;
+    color: black; /* Cor do título principal mudada para preto */
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Botões lado a lado */
+.acio .buttons-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* -------------------- Bio - layout especial (desktop) -------------------- */
+.bio .menu-desk .acio .box-ac {
+    background-color: #1f2230;
+    padding: 20px;
+    border-radius: 35px;
+}
+
+.bio .menu-desk .acio .ico {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bio .menu-desk .acio .ico img {
+    max-width: 80px;
+    border-radius: 20px;
+}
+
+.bio .menu-desk .acio .ico .info-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 20px;
+}
+
+.bio .menu-desk .acio .ico h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--offwhite);
+    margin: 0;
+}
+
+.bio .menu-desk .acio .ico .sub {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    color: var(--offwhite);
+    margin: 0;
+}
+
+.bio .menu-desk .acio .ico h2 span {
+    color: var(--roxo_vibrante);
+}
+
+/* -------------------- Estilos para os textos especiais (span) -------------------- */
+span.mercury { color: #8B91A1; font-family: 'BD', sans-serif; font-size: 2.5rem;}
+span.mars { color: #8C4A44; font-family: 'BD', sans-serif; font-size: 2.5rem;}
+span.jupiter { color: #C99039; font-family: 'BD', sans-serif; font-size: 2.5rem;}
+span.saturn { color: #B08F36; font-family: 'BD', sans-serif; font-size: 2.5rem;}
+span.andromeda { color: #395C69; font-family: 'BD', sans-serif; font-size: 2.5rem;}
+span.space { color: #00a2ff; font-family: 'BD', sans-serif; font-size: 3.1rem;}
+
+span.mercury sup, span.mars sup, span.jupiter sup, span.saturn sup, span.andromeda sup, span.space sup {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+}

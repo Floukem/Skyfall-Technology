@@ -1,0 +1,121 @@
+section.biogra h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: -65px 0 33px 0;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+section.biogra h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    /* reduz o espaço abaixo do h2 */
+    margin: -65px 0 8px 0; /* antes era 20px, agora 8px */
+    font-weight: 700;
+    font-size: 21px;
+    /* diminui padding vertical para não afastar tanto */
+    padding: 10px 0;
+}
+
+section.biogra p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    /* garante que não tenha espaço extra acima */
+    margin-top: 0;
+    font-size: 17px;
+}
+
+section.biogra h3{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/* ===== TABELA GAMES ===== */
+.games-table {
+  width: 100%;
+  border-collapse: separate; /* permite bordas arredondadas */
+  border-spacing: 0;         /* remove espaçamento */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px; /* arredondamento da tabela */
+  overflow: hidden;    /* mantém arredondamento visível */
+}
+
+.games-table thead th {
+  background-color: var(--c_soft); /* cor do cabeçalho */
+  color: #faf9f6; 
+  text-align: left;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.games-table tbody td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 12px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* zebra stripes */
+.games-table tbody tr{
+  background-color: var(--background_table);
+}
+
+/* efeito hover */
+.games-table tbody tr:hover {
+  background-color: var(--destaque);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.games-table img {
+  border: 2px solid var(--c_soft);
+  border-radius: 10px;
+  max-height: 100px;
+}
+
+/* ===== TABELA PERSONA ===== */
+.persona {
+  width: 100%;
+  border-collapse: separate; /* permite bordas arredondadas */
+  border-spacing: 0; 
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.persona thead th {
+  background-color: var(--c_soft); /* cor do cabeçalho */
+  color: #faf9f6;
+  text-align: left;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.persona tbody td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 12px;
+  font-size: 15px;
+  color: #333;
+}
+
+.persona tbody tr{
+  background-color: var(--background_table);
+}
+
+/* efeito hover */
+.persona tbody tr:hover {
+  background-color: var(--destaque);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.persona img {
+  border: 2px solid var(--c_soft);
+  border-radius: 10px;
+  max-height: 100px;
+}

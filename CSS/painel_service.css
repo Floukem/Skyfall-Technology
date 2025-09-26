@@ -1,0 +1,155 @@
+section.acio {
+  padding: 80px 0;
+}
+
+/* Artigos com 1 coluna */
+.acio article {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+/* Caixa principal */
+.acio .box-ac {
+  background-color: #1f2230;
+  padding: 20px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column; /* garante que conteúdo empilha */
+  gap: 10px;
+}
+
+/* Container ícone + texto + botão */
+.acio .ico {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* botão na ponta oposta */
+  width: 100%;
+  gap: 16px;
+}
+
+/* Info com imagem e textos */
+.acio .ico .info {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* imagem */
+.acio .ico img {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+/* Ícone tipo 2 */
+.acio .ico2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.acio .ico2 img {
+  max-width: 120px;
+  border-radius: 20px;
+}
+
+/* Títulos */
+.acio h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--offwhite);
+  margin: 0;
+}
+
+/* Parágrafos */
+.acio p {
+  color: var(--offwhite);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Destaque */
+.acio span {
+  color: var(--roxo_vibrante);
+}
+
+/* Botão */
+.acio button {
+  background-color: transparent;
+  border: 2px solid var(--offwhite);
+  border-radius: 5px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 190px;
+  height: 45px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--offwhite);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.acio button a {
+  text-decoration: none;
+  color: var(--offwhite);
+}
+
+.acio button:hover {
+  background-color: var(--roxo_vibrante);
+  box-shadow: 0 0 40px 6px var(--roxo_vibrante);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+/* Título principal */
+.acio h1 {
+  margin-bottom: -90px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 45px;
+  text-align: center;
+  display: block;
+}
+
+/* BIO - estrutura */
+.bio .menu-desk .acio .box-ac {
+  background-color: #1f2230;
+  padding: 20px;
+  border-radius: 35px;
+}
+
+.bio .menu-desk .acio .ico {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.bio .menu-desk .acio .ico img {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+/* bloco texto */
+.bio .menu-desk .acio .ico .info-texto {
+  display: flex;
+  flex-direction: column; /* empilha H2 e P */
+  gap: 4px;
+  margin-left: 20px;
+}
+
+.bio .menu-desk .acio .ico h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--offwhite);
+  margin: 0;
+}
+
+.bio .menu-desk .acio .ico p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  color: var(--offwhite);
+  margin: 0;
+}
+
+.bio .menu-desk .acio .ico h2 span {
+  color: var(--roxo_vibrante);
+}

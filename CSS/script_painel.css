@@ -1,0 +1,33 @@
+span.mercury { color: #8B91A1; font-family: 'BD', sans-serif; font-size: 2.5rem;}
+span.mars { color: #8C4A44; font-family: 'BD', sans-serif; font-size: 2.5rem;}
+span.jupiter { color: #C99039; font-family: 'BD', sans-serif; font-size: 2.5rem;}
+span.saturn { color: #B08F36; font-family: 'BD', sans-serif; font-size: 2.5rem;}
+span.andromeda { color: #395C69; font-family: 'BD', sans-serif; font-size: 2.5rem;}
+span.space1 { color: #00a2ff; font-family: 'BD', sans-serif; font-size: 3.1rem; font-weight: normal;}
+span.ast { color: var(--offwhite); font-family: 'FL', sans-serif; font-size: 1.5rem; font-weight: normal; }
+span.ast_sup { color: orange; font-family: 'FL', sans-serif; font-size: 1.5rem; font-weight: normal; }
+span.ast_sup2 { color: orange; font-family: 'Planet', sans-serif; font-size: 1.5rem; font-weight: normal; }
+
+span.mercury sup, span.mars sup, span.jupiter sup, span.saturn sup, span.andromeda sup, span.space1 sup {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+@font-face {
+    font-family: "FL";
+    src: local("Flare"), local("Flare"),
+        url("font/Flare-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Planet";
+    src: local("Planet"), local("Planet"),
+        url("font/Planets.otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

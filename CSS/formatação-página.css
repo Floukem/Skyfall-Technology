@@ -1,0 +1,66 @@
+/*Geolocalização de Fontes Online (GFO)*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); /*Montserrat - min: 100 - max: 900*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"); /*Jakarta - min: 200 - max: 800*/
+
+@font-face {
+    font-family: "BD";
+    src: local("Avallon"), local("BD"),
+        url("font/Avallon.woff2") format("woff2"),
+        url("font/Avallon.woff") format("woff"),
+        url("font/Avallon.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*Fim do trecho de Geolocalização de Fontes Online (GFO)*/
+
+/*Parâmetro de Formatação Permanente (PFP)*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1ecdd;
+}
+/*Fim do Trecho do Parâmetro de Formatação Permanente (PFP)*/
+
+/*Parâmetro de Formatação Temporária (PFT)*/
+/*body {
+  background-color: #e0d9cb;
+}
+/* Fim do Trecho do Parâmetro de Formatação Temporária (PFT)*/
+
+/*Cores Padronizadas para o Site*/
+:root {
+  --offwhite: #faf9f6;
+  --azure_acizentado: #1f2230;
+  --azure_cute: #2391f1;
+  --roxo_vibrante: #7a5fff;
+  --azure_footer: #2f3347;
+  --skyfall_color: #589af3;
+  --hollow: #b6b6b4;
+  --c_soft: #333333;
+  --destaque: #b3b9bd;
+  --background_table: #ede7e0;
+  --zte: rgb(255, 255, 255);
+
+  /*SkAI Color's*/
+  --Pink: #ff5da9;
+  --Azure_Color1: #2c90e2;
+  --Azure_Color2: #1e6dff;
+  --Prata: #3d3c3a;
+  --tester: #5b6f82;
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+  background: linear-gradient(var(--azure_acizentado), var(--azure_footer));
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#7a5fff, #301f81);
+  border-radius: 6px;
+}

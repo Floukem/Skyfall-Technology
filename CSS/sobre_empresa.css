@@ -1,0 +1,50 @@
+.banner1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--azure_acizentado);
+    margin-bottom: 17px;
+}
+
+.banner1 img {
+    height: 370px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.text p {
+    font-size: 17px;
+    color: var(--azure_acizentado);
+    font-weight: 600;
+    text-align: justify;
+}
+
+.text h2 {
+    font-size: 22.5px;
+    margin-bottom: 1px;
+    color: var(--roxo_vibrante);
+    margin-top: 8px;
+}
+
+.text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.alert marquee {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: var(--azure_acizentado);
+    color: var(--offwhite);
+    padding: 7.5px 0;
+    font-weight: 700;
+}
+
+.alert marquee span {
+    color: #ffc600;
+}
+
+.alert {
+    margin-bottom: -9px;
+}

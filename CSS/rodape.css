@@ -1,0 +1,94 @@
+footer {
+  background-color: var(--azure_footer);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 55px 0;
+}
+
+footer p {
+  padding: 3px 0;
+}
+
+footer p strong {
+  font-weight: 700;
+  transition: 0.75s;
+}
+
+footer p strong:hover {
+  color: var(--skyfall_color);
+}
+
+footer > .menu-desk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--offwhite);
+}
+
+footer .logo-footer img {
+  max-width: 230px;
+  margin-bottom: 16px;
+}
+
+.flash-acess button {
+  background-color: transparent;
+  border: 2px solid var(--offwhite);
+  border-radius: 8px;
+  color: var(--offwhite);
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  width: 45px;
+  height: 45px;
+  transition: 0.5s;
+}
+
+.flash-acess button a {
+  text-decoration: none;
+  color: var(--offwhite);
+}
+
+.flash-acess button.SkAI-Mini {
+  width: 90px;
+  height: 45px;
+  font-size: 16px;
+  transition: 0s;
+  font-size: 1.2rem;
+}
+
+.flash-acess button:hover {
+  background-color: var(--roxo_vibrante);
+}
+
+button.SkAI-Mini:hover {
+  background: linear-gradient(
+    45deg,
+    var(--Azure_Color1),
+    var(--Pink),
+    var(--Azure_Color2)
+  );
+  background-size: 400% 400%;
+  animation: slideGradient 6s linear infinite;
+  transition: 0.5s;
+  color: var(--azure_acizentado) !important;
+  border: 2px solid var(--offwhite);
+  box-shadow: 0 0 50px 7px var(--roxo_vibrante);
+}
+
+button.btn-skai i a:hover {
+  color: var(--Prata);
+}
+
+@keyframes slideGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

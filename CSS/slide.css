@@ -1,0 +1,173 @@
+/* === Slider === */
+.slider {
+  width: 96%;                /* ocupa 96% da largura da página */
+  max-width: 1920px;         /* largura máxima igual à imagem */
+  aspect-ratio: 4 / 1;       /* mesma proporção da imagem 1920x480 */
+  margin: 30px auto;         /* centraliza e dá um espaço em cima/baixo */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  background: #f5f5f5;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+figure {
+  display: flex;
+  width: 300%; /* 3 slides */
+  animation: slide 15s infinite;
+}
+
+.slide {
+  flex: 0 0 33.33%;
+}
+
+.slide img {
+  width: 100%;      /* ocupa toda a largura da .slide */
+  height: auto;     /* mantém proporção original sem esticar */
+  display: block;
+}
+
+/* === Animação === */
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  30% { transform: translateX(0%); }
+
+  33.33% { transform: translateX(-33.33%); }
+  63.33% { transform: translateX(-33.33%); }
+
+  66.66% { transform: translateX(-66.66%); }
+  96.66% { transform: translateX(-66.66%); }
+
+  100% { transform: translateX(0%); }
+}
+
+/* === Responsividade (bordas automáticas) === */
+@media (max-width: 1024px) {
+  .slider {
+    width: 98%;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    width: 98%;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    width: 98%;
+    border-radius: 8px;
+  }
+}
+
+/* === Social === */
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin-top: 45px;
+}
+
+.social h1.info {
+  font-size: 2.1rem;
+  text-align: center;
+}
+
+.social h1.info span {
+  color: var(--roxo_vibrante);
+}
+
+.social .socialmedia {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.social .socialmedia button {
+  font-size: 3.45rem;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+}
+
+.social .socialmedia button a {
+  color: var(--azure_acizentado);
+  transition: .75s;
+  text-decoration: none;
+}
+
+.social .socialmedia button a:hover {
+  color: var(--roxo_vibrante);
+}
+
+/* Cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 40px;
+  justify-items: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.card {
+  background: #1f2230;
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 340px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  display: block;
+  width: 125px;
+  height: 125px;
+  margin: 20px auto 0;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.novidades h1.novidade {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.1rem;
+  text-align: center;
+}
+
+.novidades h1.novidade span {
+  color: var(--roxo_vibrante);
+}

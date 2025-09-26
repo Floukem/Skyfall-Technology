@@ -1,0 +1,86 @@
+.container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.container .img-box {
+  width: fit-content; /* se ajusta ao conteúdo */
+  margin: 50px 0;
+  border-radius: 15px;
+  background: var(--azure_acizentado); /* fundo preto */
+  padding: 20px;
+  display: inline-block; /* caixa */
+  text-align: right; /* centraliza o texto */
+  color: var(--offwhite); /* cor do texto */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.container .img-box img {
+  height: 650px;
+  display: block; /* tira espaços embaixo */
+  margin: 0 auto; /* centraliza imagem */
+  border-radius: 15px;
+}
+
+.container .img-box p {
+  margin-top: 5px; /* espaço entre imagem e texto */
+  margin-bottom: -5px;
+  font-size: 0.85rem;
+}
+
+.container .img-box h6 {
+  margin-top: 5px; /* espaço entre imagem e texto */
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-style: normal;
+}
+
+.btn-est{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.btn-est button.est {
+    text-decoration: none;
+    font-size: 1.05rem;
+    margin-top: -25px;
+    margin-bottom: 25px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2.5px solid var(--azure_acizentado);
+    transition: .5s;
+  }
+  
+  /* link dentro do botão */
+  .btn-est button.est a {
+    text-decoration: none;
+    color: var(--azure_acizentado);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+    display: inline-block; /* garante que ocupe espaço */
+    width: 100%;
+    height: 100%;
+    line-height: 50px; /* centraliza verticalmente */
+  }
+  
+  /* ao passar o mouse no botão */
+  .btn-est button.est:hover {
+    background-color: var(--roxo_vibrante);    
+    width: 330px;
+    height: 55px;
+    font-size: 1.2rem;
+  }
+  
+  /* altera automaticamente o link quando o botão está em hover */
+  .btn-est button.est:hover a {
+    color: var(--offwhite);
+    font-size: 1.2rem;
+  }
+  
